@@ -1,4 +1,2 @@
 /** INSERT CUSTOM JS HERE **/
-export default function() {
-
-}
+export default function () {}
