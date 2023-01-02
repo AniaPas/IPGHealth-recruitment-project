@@ -1,0 +1,13 @@
+/** INSERT CUSTOM SCSS STYLES HERE **/
+body {
+  color: #1d1d1d;
+  font-family: "Poppins";
+  background-color: #f5f5f7;
+}
+body .wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=custom.css.map */
