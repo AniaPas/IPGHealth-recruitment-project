@@ -7,20 +7,26 @@ body {
   height: 106vh;
 }
 body header {
+  width: 100vw;
   display: grid;
+  justify-content: start;
+  grid-template-areas: "wrapper wrapper contact contact";
 }
 body header .wrapper {
+  grid-area: wrapper;
   background-color: #ffffff;
   width: 57vw;
   height: 90vh;
   display: grid;
   border-radius: 0 0 10% 0;
+  grid-template-areas: "a ";
 }
 body header .wrapper .nav-container {
   font-size: 0.7rem;
   background-color: aqua;
   width: 50vw;
   height: 15vh;
+  grid-area: a;
   display: flex;
   flex-direction: row;
   z-index: 200;
@@ -32,6 +38,15 @@ body header .wrapper .nav-container .logo {
   border-radius: 0 0 20% 0;
 }
 body header .wrapper .nav-container .navigation-list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
+}
+body header .contact-section {
+  justify-self: end;
+  width: 43vw;
+  height: 80vh;
+  background-color: brown;
 }/*# sourceMappingURL=custom.css.map */

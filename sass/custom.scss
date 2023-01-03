@@ -8,15 +8,20 @@ body {
   background-color: $lightGray;
   height: 106vh;
   header {
+    width: 100vw;
     display: grid;
+    justify-content: start;
+    grid-template-areas: "wrapper wrapper contact contact";
+
     .wrapper {
       //position: relative;
+      grid-area: wrapper;
       background-color: $white;
       width: 57vw;
       height: 90vh;
       display: grid;
       border-radius: 0 0 10% 0;
-      //grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: "a ";
       //grid-template-rows: repeat(12, 1fr);
       //width: 100vw;
       //height: 100vh;
@@ -26,6 +31,7 @@ body {
         background-color: aqua;
         width: 50vw;
         height: 15vh;
+        grid-area: a;
 
         display: flex;
         flex-direction: row;
@@ -33,15 +39,25 @@ body {
         z-index: 200;
         .logo {
           background-color: $lightGray;
+
           width: 11vw;
           height: 20.7vh;
           border-radius: 0 0 20% 0;
         }
         .navigation-list {
+          position: sticky;
+
+          top: 0;
           display: flex;
           flex-direction: row;
         }
       }
+    }
+    .contact-section {
+      justify-self: end;
+      width: 43vw;
+      height: 80vh;
+      background-color: brown;
     }
   }
 }
