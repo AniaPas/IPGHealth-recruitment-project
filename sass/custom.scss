@@ -7,7 +7,9 @@ body {
   font-family: $font1;
   background-color: $lightGray;
   height: 106vh;
+  position: relative;
   header {
+    position: absolute;
     width: 100vw;
     display: grid;
     justify-content: start;
@@ -32,14 +34,11 @@ body {
         width: 50vw;
         height: 15vh;
         grid-area: a;
-
         display: flex;
         flex-direction: row;
-
         z-index: 200;
         .logo {
           background-color: $lightGray;
-
           width: 11vw;
           height: 20.7vh;
           border-radius: 0 0 20% 0;
@@ -59,5 +58,13 @@ body {
       height: 80vh;
       background-color: brown;
     }
+  }
+  .rectangle {
+    @include rectangle;
+    position: absolute;
+    z-index: 50;
+    width: 32.6vw;
+    height: 36.5vh;
+    transform: translate(40vw, 45vh);
   }
 }
