@@ -2,14 +2,46 @@
 @import "./variables";
 @import "./mixins";
 body {
+  margin: 0;
   color: $nero;
   font-family: $font1;
   background-color: $lightGray;
-  .wrapper {
+  height: 106vh;
+  header {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    width: 100vw;
-    height: 100vh;
+    .wrapper {
+      //position: relative;
+      background-color: $white;
+      width: 57vw;
+      height: 90vh;
+      display: grid;
+      border-radius: 0 0 10% 0;
+      //grid-template-columns: repeat(12, 1fr);
+      //grid-template-rows: repeat(12, 1fr);
+      //width: 100vw;
+      //height: 100vh;
+
+      .nav-container {
+        font-size: 0.7rem;
+        background-color: aqua;
+        width: 50vw;
+        height: 15vh;
+
+        display: flex;
+        flex-direction: row;
+
+        z-index: 200;
+        .logo {
+          background-color: $lightGray;
+          width: 11vw;
+          height: 20.7vh;
+          border-radius: 0 0 20% 0;
+        }
+        .navigation-list {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
   }
 }
