@@ -20,7 +20,7 @@ body header .wrapper {
   width: 57vw;
   height: 90vh;
   display: grid;
-  border-radius: 0 0 10% 0;
+  border-radius: 0 0 2.6rem 0;
   grid-template-areas: "a ";
 }
 body header .wrapper .nav-container {
@@ -60,5 +60,5 @@ body .rectangle {
   z-index: 50;
   width: 32.6vw;
   height: 36.5vh;
-  transform: translate(40vw, 45vh);
+  transform: translate(35vw, 40vh);
 }/*# sourceMappingURL=custom.css.map */
