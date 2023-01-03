@@ -6,7 +6,7 @@ body {
   color: $nero;
   font-family: $font1;
   background-color: $lightGray;
-  height: 106vh;
+  height: 160vh;
   position: relative;
   header {
     position: absolute;
@@ -19,10 +19,10 @@ body {
       //position: relative;
       grid-area: wrapper;
       background-color: $white;
-      width: 57vw;
-      height: 90vh;
+      width: 56.8vw;
+      height: 120vh;
       display: grid;
-      border-radius: 0 0 2.6rem 0;
+      border-radius: 0 0 3.5rem 0;
       grid-template-areas: "a ";
       //grid-template-rows: repeat(12, 1fr);
       //width: 100vw;
@@ -39,8 +39,8 @@ body {
         z-index: 200;
         .logo {
           background-color: $lightGray;
-          width: 11vw;
-          height: 20.7vh;
+          width: 11.66vw;
+          height: 20.51vh;
           border-radius: 0 0 20% 0;
         }
         .navigation-list {
@@ -63,16 +63,16 @@ body {
     @include rectangle;
     position: absolute;
     z-index: 50;
-    width: 32.6%;
-    height: 36%;
-    transform: translate(35vw, 40vh);
+    width: 34vw;
+    height: 43vh;
+    transform: translate(35vw, 62vh);
   }
   .rectangle2 {
     @include rectangle;
     position: absolute;
     z-index: 50;
-    width: 21.6%;
-    height: 27.8%;
-    transform: translate(65.5vw, 46.9vh) rotate(-90deg);
+    width: 30vw;
+    height: 43vh;
+    transform: translate(66.7vw, 70.5vh) rotate(-90deg);
   }
 }

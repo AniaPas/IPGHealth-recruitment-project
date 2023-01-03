@@ -4,7 +4,7 @@ body {
   color: #1d1d1d;
   font-family: "Poppins";
   background-color: #f5f5f7;
-  height: 106vh;
+  height: 160vh;
   position: relative;
 }
 body header {
@@ -16,10 +16,10 @@ body header {
 body header .wrapper {
   grid-area: wrapper;
   background-color: #ffffff;
-  width: 57vw;
-  height: 90vh;
+  width: 56.8vw;
+  height: 120vh;
   display: grid;
-  border-radius: 0 0 2.6rem 0;
+  border-radius: 0 0 3.5rem 0;
   grid-template-areas: "a ";
 }
 body header .wrapper .nav-container {
@@ -34,8 +34,8 @@ body header .wrapper .nav-container {
 }
 body header .wrapper .nav-container .logo {
   background-color: #f5f5f7;
-  width: 11vw;
-  height: 20.7vh;
+  width: 11.66vw;
+  height: 20.51vh;
   border-radius: 0 0 20% 0;
 }
 body header .wrapper .nav-container .navigation-list {
@@ -52,22 +52,22 @@ body header .contact-section {
   background-color: brown;
 }
 body .rectangle1 {
-  border-radius: 30px 30px 30px 0;
+  border-radius: 50px 50px 50px 0;
   padding: 20px;
   background-color: #9f9f9f;
   position: absolute;
   z-index: 50;
-  width: 32.6%;
-  height: 36%;
-  transform: translate(35vw, 40vh);
+  width: 34vw;
+  height: 43vh;
+  transform: translate(35vw, 62vh);
 }
 body .rectangle2 {
-  border-radius: 30px 30px 30px 0;
+  border-radius: 50px 50px 50px 0;
   padding: 20px;
   background-color: #9f9f9f;
   position: absolute;
   z-index: 50;
-  width: 21.6%;
-  height: 27.8%;
-  transform: translate(65.5vw, 46.9vh) rotate(-90deg);
+  width: 30vw;
+  height: 43vh;
+  transform: translate(66.7vw, 70.5vh) rotate(-90deg);
 }/*# sourceMappingURL=custom.css.map */
