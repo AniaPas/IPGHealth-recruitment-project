@@ -10,7 +10,7 @@ body {
   position: relative;
   header {
     position: absolute;
-    width: 100vw;
+    //width: 99vw;
     display: grid;
     justify-content: start;
     grid-template-areas: "wrapper wrapper contact contact";
@@ -54,17 +54,25 @@ body {
     }
     .contact-section {
       justify-self: end;
-      width: 43vw;
+      width: 30vw;
       height: 80vh;
       background-color: brown;
     }
   }
-  .rectangle {
+  .rectangle1 {
     @include rectangle;
     position: absolute;
     z-index: 50;
-    width: 32.6vw;
-    height: 36.5vh;
+    width: 32.6%;
+    height: 36%;
     transform: translate(35vw, 40vh);
+  }
+  .rectangle2 {
+    @include rectangle;
+    position: absolute;
+    z-index: 50;
+    width: 21.6%;
+    height: 27.8%;
+    transform: translate(65.5vw, 46.9vh) rotate(-90deg);
   }
 }
