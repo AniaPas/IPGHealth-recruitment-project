@@ -188,11 +188,19 @@ body .circle-element {
 body .circle-element .circle-element_circle {
   width: 18vw;
   height: 18vw;
-  background-color: red;
   position: absolute;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #ffffff;
+}
+body .circle-element .circle-element_circle .circle-element_circle--dot {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #0f6eff;
+  transform: translate(6.5vw, 38vh);
 }
 body .circle-element .circle-element_line {
   height: 1.5px;
