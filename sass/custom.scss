@@ -81,19 +81,34 @@ body {
     .contact-section {
       display: grid;
       grid-template-rows: 15vh 45vh 1fr;
-      justify-self: end;
+
       width: 40vw;
       height: 80vh;
       background-color: brown;
       align-items: end;
+      .contact-section_details {
+        display: flex;
+        flex-direction: row;
+        font-size: $fontXS;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 5vh;
+        .contact-section_details--btn {
+          border: 1px solid $blue;
+          color: $blue;
+          padding: 5px 15px;
+          border-radius: 50px;
+          margin: 0 3vw;
+        }
+      }
       .rectangle3 {
         grid-row: 2/3;
         width: 28vw;
         height: 38vh;
         @include rectangle;
         transform: scale(-1);
-        margin-left: 8vw;
-        margin-bottom: 2vh;
+        margin-left: 7.5vw;
+        //margin-bottom: 2vh;
       }
     }
   }
@@ -103,7 +118,7 @@ body {
     z-index: 50;
     width: 34vw;
     height: 43vh;
-    transform: translate(35vw, 62vh);
+    transform: translate(35.7vw, 62vh);
   }
   .rectangle2 {
     @include rectangle;
@@ -111,6 +126,6 @@ body {
     z-index: 50;
     width: 30vw;
     height: 43vh;
-    transform: translate(66.7vw, 70.5vh) rotate(-90deg);
+    transform: translate(67.3vw, 70.5vh) rotate(-90deg);
   }
 }
