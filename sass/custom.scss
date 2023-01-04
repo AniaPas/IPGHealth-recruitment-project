@@ -227,9 +227,18 @@ body {
     }
 
     .tiles {
+      position: relative;
       grid-area: tiles;
       display: flex;
       flex-direction: row;
+      .small-circle {
+        @include circle2;
+        background-color: $white;
+        height: 7.5vw;
+        width: 7.5vw;
+        z-index: -100;
+        transform: translate(-5vw, 12vh);
+      }
       .tile1 {
         @include rectangle2;
         background-color: $nero;
@@ -251,8 +260,8 @@ body {
         .tile1_comment-circle {
           @include circle;
           border: 1.5px solid $white;
-          width: 5vw;
-          height: 5vw;
+          width: 4.5vw;
+          height: 4.5vw;
           color: $white;
           font-size: 2vh;
           text-align: center;
@@ -266,14 +275,17 @@ body {
       .tile2 {
         @include rectangle2;
         background-color: $white;
+        @include tile;
       }
       .tile3 {
         @include rectangle2;
         background-color: $white;
+        @include tile;
       }
       .tile4 {
         @include rectangle2;
         background-color: $white;
+        @include tile;
       }
     }
   }

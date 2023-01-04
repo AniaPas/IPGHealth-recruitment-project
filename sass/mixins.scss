@@ -20,5 +20,57 @@
   background-color: transparent;
   border-radius: 50%;
 }
-@mixin author {
+@mixin circle2 {
+  position: absolute;
+  border-radius: 50%;
+}
+@mixin tile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3vh;
+  grid-template-areas:
+    "w x x x x"
+    "w y y y y"
+    "z z z z z"
+    "v v v v v"
+    "u u u u u";
+  .comment-circle {
+    grid-area: w;
+    @include circle;
+    background-color: $darkGray;
+    width: 3vw;
+    height: 3vw;
+    padding-right: 0;
+  }
+  .comment-author {
+    grid-area: x;
+    font-size: $fontXS;
+    font-weight: $bold2;
+    color: $nero;
+  }
+  .comment-date {
+    grid-area: y;
+    font-size: $fontXS;
+    color: $darkGray;
+    margin-bottom: $margin2;
+  }
+  .comment-heading {
+    grid-area: z;
+    font-size: $fontXS;
+    font-weight: $bold2;
+    color: $nero;
+    border-top: solid 1px $darkGray;
+    padding-top: $margin2;
+  }
+  .comment-text {
+    grid-area: v;
+    font-size: $fontXS;
+    color: $nero;
+  }
+  .comment-more {
+    grid-area: u;
+    font-size: $fontXS;
+    color: $blue;
+    text-decoration: underline;
+  }
 }

@@ -227,9 +227,19 @@ body footer .blog-line {
   background-color: #0f6eff;
 }
 body footer .tiles {
+  position: relative;
   grid-area: tiles;
   display: flex;
   flex-direction: row;
+}
+body footer .tiles .small-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffffff;
+  height: 7.5vw;
+  width: 7.5vw;
+  z-index: -100;
+  transform: translate(-5vw, 12vh);
 }
 body footer .tiles .tile1 {
   border-radius: 19% 19% 0 19%;
@@ -259,8 +269,8 @@ body footer .tiles .tile1 .tile1_comment-circle {
   background-color: transparent;
   border-radius: 50%;
   border: 1.5px solid #ffffff;
-  width: 5vw;
-  height: 5vw;
+  width: 4.5vw;
+  height: 4.5vw;
   color: #ffffff;
   font-size: 2vh;
   text-align: center;
@@ -277,6 +287,51 @@ body footer .tiles .tile2 {
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3vh;
+  grid-template-areas: "w x x x x" "w y y y y" "z z z z z" "v v v v v" "u u u u u";
+}
+body footer .tiles .tile2 .comment-circle {
+  grid-area: w;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #9f9f9f;
+  width: 3vw;
+  height: 3vw;
+  padding-right: 0;
+}
+body footer .tiles .tile2 .comment-author {
+  grid-area: x;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+body footer .tiles .tile2 .comment-date {
+  grid-area: y;
+  font-size: 0.7rem;
+  color: #9f9f9f;
+  margin-bottom: 2vh;
+}
+body footer .tiles .tile2 .comment-heading {
+  grid-area: z;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  border-top: solid 1px #9f9f9f;
+  padding-top: 2vh;
+}
+body footer .tiles .tile2 .comment-text {
+  grid-area: v;
+  font-size: 0.7rem;
+  color: #1d1d1d;
+}
+body footer .tiles .tile2 .comment-more {
+  grid-area: u;
+  font-size: 0.7rem;
+  color: #0f6eff;
+  text-decoration: underline;
 }
 body footer .tiles .tile3 {
   border-radius: 19% 19% 0 19%;
@@ -285,6 +340,51 @@ body footer .tiles .tile3 {
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3vh;
+  grid-template-areas: "w x x x x" "w y y y y" "z z z z z" "v v v v v" "u u u u u";
+}
+body footer .tiles .tile3 .comment-circle {
+  grid-area: w;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #9f9f9f;
+  width: 3vw;
+  height: 3vw;
+  padding-right: 0;
+}
+body footer .tiles .tile3 .comment-author {
+  grid-area: x;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+body footer .tiles .tile3 .comment-date {
+  grid-area: y;
+  font-size: 0.7rem;
+  color: #9f9f9f;
+  margin-bottom: 2vh;
+}
+body footer .tiles .tile3 .comment-heading {
+  grid-area: z;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  border-top: solid 1px #9f9f9f;
+  padding-top: 2vh;
+}
+body footer .tiles .tile3 .comment-text {
+  grid-area: v;
+  font-size: 0.7rem;
+  color: #1d1d1d;
+}
+body footer .tiles .tile3 .comment-more {
+  grid-area: u;
+  font-size: 0.7rem;
+  color: #0f6eff;
+  text-decoration: underline;
 }
 body footer .tiles .tile4 {
   border-radius: 19% 19% 0 19%;
@@ -293,4 +393,49 @@ body footer .tiles .tile4 {
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3vh;
+  grid-template-areas: "w x x x x" "w y y y y" "z z z z z" "v v v v v" "u u u u u";
+}
+body footer .tiles .tile4 .comment-circle {
+  grid-area: w;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #9f9f9f;
+  width: 3vw;
+  height: 3vw;
+  padding-right: 0;
+}
+body footer .tiles .tile4 .comment-author {
+  grid-area: x;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+body footer .tiles .tile4 .comment-date {
+  grid-area: y;
+  font-size: 0.7rem;
+  color: #9f9f9f;
+  margin-bottom: 2vh;
+}
+body footer .tiles .tile4 .comment-heading {
+  grid-area: z;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  border-top: solid 1px #9f9f9f;
+  padding-top: 2vh;
+}
+body footer .tiles .tile4 .comment-text {
+  grid-area: v;
+  font-size: 0.7rem;
+  color: #1d1d1d;
+}
+body footer .tiles .tile4 .comment-more {
+  grid-area: u;
+  font-size: 0.7rem;
+  color: #0f6eff;
+  text-decoration: underline;
 }/*# sourceMappingURL=custom.css.map */
