@@ -71,13 +71,14 @@ body header .wrapper .intro .intro-text {
   padding-top: 5vh;
   font-size: 0.9rem;
   line-height: 115%;
+  color: #9f9f9f;
 }
 body header .contact-section {
   display: grid;
   grid-template-rows: 15vh 45vh 1fr;
   width: 40vw;
   height: 80vh;
-  background-color: brown;
+  background-color: #f5f5f7;
   align-items: end;
 }
 body header .contact-section .contact-section_details {
@@ -86,20 +87,23 @@ body header .contact-section .contact-section_details {
   font-size: 0.7rem;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 3vw 5vh 3vw;
+  margin: 0 3vw 5vh 5vw;
 }
 body header .contact-section .contact-section_details .contact-section_details--btn {
   border: 1px solid #0f6eff;
   color: #0f6eff;
-  padding: 5px 15px;
+  padding: 10px 20px;
   border-radius: 50px;
-  margin: 0 3vw;
+  margin-left: 3vw;
 }
 body header .contact-section .contact-section_details .contact-section_details--lg {
   margin-left: 2vw;
 }
 body header .contact-section .contact-section_details .contact-section_details--phone {
   color: #0f6eff;
+}
+body header .contact-section .contact-section_details .contact-section_details--call {
+  color: #9f9f9f;
 }
 body header .contact-section .rectangle3 {
   grid-row: 2/3;

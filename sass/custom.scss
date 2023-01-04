@@ -75,6 +75,7 @@ body {
           padding-top: 5vh;
           font-size: $fontS;
           line-height: 115%;
+          color: $darkGray;
         }
       }
     }
@@ -84,7 +85,7 @@ body {
 
       width: 40vw;
       height: 80vh;
-      background-color: brown;
+      background-color: $lightGray;
       align-items: end;
       .contact-section_details {
         display: flex;
@@ -92,20 +93,23 @@ body {
         font-size: $fontXS;
         align-items: center;
         justify-content: space-evenly;
-        margin: 0 3vw 5vh 3vw;
+        margin: 0 3vw 5vh 5vw;
 
         .contact-section_details--btn {
           border: 1px solid $blue;
           color: $blue;
-          padding: 5px 15px;
+          padding: 10px 20px;
           border-radius: 50px;
-          margin: 0 3vw;
+          margin-left: 3vw;
         }
         .contact-section_details--lg {
           margin-left: 2vw;
         }
         .contact-section_details--phone {
           color: $blue;
+        }
+        .contact-section_details--call {
+          color: $darkGray;
         }
       }
       .rectangle3 {
