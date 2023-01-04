@@ -31,7 +31,7 @@ body {
 
       .nav-container {
         font-size: 0.7rem;
-        background-color: aqua;
+        background-color: transparent;
         width: 50vw;
         height: 15vh;
         grid-area: a;
@@ -154,7 +154,7 @@ body {
           color: $darkGray;
         }
       }
-      .rectangle3 {
+      .rectangle0 {
         grid-row: 2/3;
         width: 28vw;
         height: 38vh;
@@ -180,6 +180,7 @@ body {
     height: 43vh;
     transform: translate(67.3vw, 70.5vh) rotate(-90deg);
   }
+
   .circle-element {
     position: absolute;
     width: 18vw;
@@ -297,9 +298,22 @@ body {
         @include tile;
       }
       .tile4 {
-        @include rectangle2;
+        height: 20vh;
+        width: 14vw;
         background-color: $white;
-        @include tile;
+        margin: 12vh 3vw 10vh 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: transparent;
+
+        .gray-dot {
+          border-radius: 50%;
+          width: 0.7vh;
+          height: 0.7vh;
+          margin: 4px;
+          background-color: $darkGray;
+        }
       }
     }
   }

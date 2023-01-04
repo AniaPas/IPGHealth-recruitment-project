@@ -25,7 +25,7 @@ body header .wrapper {
 }
 body header .wrapper .nav-container {
   font-size: 0.7rem;
-  background-color: aqua;
+  background-color: transparent;
   width: 50vw;
   height: 15vh;
   grid-area: a;
@@ -58,12 +58,7 @@ body header .wrapper .nav-container .navigation-list {
 body header .wrapper .nav-container .navigation-list .navigation-list_element {
   width: 7vw;
 }
-body
-  header
-  .wrapper
-  .nav-container
-  .navigation-list
-  .navigation-list_element:first-child {
+body header .wrapper .nav-container .navigation-list .navigation-list_element:first-child {
   font-weight: 700;
   color: #0f6eff;
 }
@@ -108,13 +103,7 @@ body header .wrapper .play .play-element .play-element_circle {
   border: 2px solid #0f6eff;
   transform: translate(10vw, -7vh);
 }
-body
-  header
-  .wrapper
-  .play
-  .play-element
-  .play-element_circle
-  .material-symbols-outlined {
+body header .wrapper .play .play-element .play-element_circle .material-symbols-outlined {
   font-size: 9.5vw;
   font-weight: 100;
   color: #0f6eff;
@@ -143,39 +132,23 @@ body header .contact-section .contact-section_details {
   justify-content: space-evenly;
   margin: 0 3vw 5vh 5vw;
 }
-body
-  header
-  .contact-section
-  .contact-section_details
-  .contact-section_details--btn {
+body header .contact-section .contact-section_details .contact-section_details--btn {
   border: 1px solid #0f6eff;
   color: #0f6eff;
   padding: 10px 20px;
   border-radius: 50px;
   margin-left: 3vw;
 }
-body
-  header
-  .contact-section
-  .contact-section_details
-  .contact-section_details--lg {
+body header .contact-section .contact-section_details .contact-section_details--lg {
   margin-left: 2vw;
 }
-body
-  header
-  .contact-section
-  .contact-section_details
-  .contact-section_details--phone {
+body header .contact-section .contact-section_details .contact-section_details--phone {
   color: #0f6eff;
 }
-body
-  header
-  .contact-section
-  .contact-section_details
-  .contact-section_details--call {
+body header .contact-section .contact-section_details .contact-section_details--call {
   color: #9f9f9f;
 }
-body header .contact-section . {
+body header .contact-section .rectangle0 {
   grid-row: 2/3;
   width: 28vw;
   height: 38vh;
@@ -430,55 +403,19 @@ body footer .tiles .tile3 .comment-more {
   text-decoration: underline;
 }
 body footer .tiles .tile4 {
-  border-radius: 19% 19% 0 19%;
-  padding: 3vw;
-  height: 55vh;
-  width: 20vw;
-  margin: 12vh 3vw 10vh 0;
+  height: 20vh;
+  width: 14vw;
   background-color: #ffffff;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 3vh;
-  grid-template-areas: "w x x x x" "w y y y y" "z z z z z" "v v v v v" "u u u u u";
-}
-body footer .tiles .tile4 .comment-circle {
-  grid-area: w;
-  position: absolute;
+  margin: 12vh 3vw 10vh 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: transparent;
+}
+body footer .tiles .tile4 .gray-dot {
   border-radius: 50%;
+  width: 0.7vh;
+  height: 0.7vh;
+  margin: 4px;
   background-color: #9f9f9f;
-  width: 3vw;
-  height: 3vw;
-  padding-right: 0;
-}
-body footer .tiles .tile4 .comment-author {
-  grid-area: x;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #1d1d1d;
-}
-body footer .tiles .tile4 .comment-date {
-  grid-area: y;
-  font-size: 0.7rem;
-  color: #9f9f9f;
-  margin-bottom: 2vh;
-}
-body footer .tiles .tile4 .comment-heading {
-  grid-area: z;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #1d1d1d;
-  border-top: solid 1px #9f9f9f;
-  padding-top: 2vh;
-}
-body footer .tiles .tile4 .comment-text {
-  grid-area: v;
-  font-size: 0.7rem;
-  color: #1d1d1d;
-}
-body footer .tiles .tile4 .comment-more {
-  grid-area: u;
-  font-size: 0.7rem;
-  color: #0f6eff;
-  text-decoration: underline;
-} /*# sourceMappingURL=custom.css.map */
+}/*# sourceMappingURL=custom.css.map */
