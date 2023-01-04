@@ -92,13 +92,20 @@ body {
         font-size: $fontXS;
         align-items: center;
         justify-content: space-evenly;
-        margin-bottom: 5vh;
+        margin: 0 3vw 5vh 3vw;
+
         .contact-section_details--btn {
           border: 1px solid $blue;
           color: $blue;
           padding: 5px 15px;
           border-radius: 50px;
           margin: 0 3vw;
+        }
+        .contact-section_details--lg {
+          margin-left: 2vw;
+        }
+        .contact-section_details--phone {
+          color: $blue;
         }
       }
       .rectangle3 {
@@ -107,8 +114,7 @@ body {
         height: 38vh;
         @include rectangle;
         transform: scale(-1);
-        margin-left: 7.5vw;
-        //margin-bottom: 2vh;
+        margin: 0 0 2vh 7.5vw;
       }
     }
   }

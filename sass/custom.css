@@ -75,11 +75,31 @@ body header .wrapper .intro .intro-text {
 body header .contact-section {
   display: grid;
   grid-template-rows: 15vh 45vh 1fr;
-  justify-self: end;
   width: 40vw;
   height: 80vh;
   background-color: brown;
   align-items: end;
+}
+body header .contact-section .contact-section_details {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 3vw 5vh 3vw;
+}
+body header .contact-section .contact-section_details .contact-section_details--btn {
+  border: 1px solid #0f6eff;
+  color: #0f6eff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  margin: 0 3vw;
+}
+body header .contact-section .contact-section_details .contact-section_details--lg {
+  margin-left: 2vw;
+}
+body header .contact-section .contact-section_details .contact-section_details--phone {
+  color: #0f6eff;
 }
 body header .contact-section .rectangle3 {
   grid-row: 2/3;
@@ -89,8 +109,7 @@ body header .contact-section .rectangle3 {
   padding: 20px;
   background-color: #9f9f9f;
   transform: scale(-1);
-  margin-left: 8vw;
-  margin-bottom: 2vh;
+  margin: 0 0 2vh 7.5vw;
 }
 body .rectangle1 {
   border-radius: 50px 50px 50px 0;
@@ -100,7 +119,7 @@ body .rectangle1 {
   z-index: 50;
   width: 34vw;
   height: 43vh;
-  transform: translate(35vw, 62vh);
+  transform: translate(35.7vw, 62vh);
 }
 body .rectangle2 {
   border-radius: 50px 50px 50px 0;
@@ -110,5 +129,5 @@ body .rectangle2 {
   z-index: 50;
   width: 30vw;
   height: 43vh;
-  transform: translate(66.7vw, 70.5vh) rotate(-90deg);
+  transform: translate(67.3vw, 70.5vh) rotate(-90deg);
 }/*# sourceMappingURL=custom.css.map */
