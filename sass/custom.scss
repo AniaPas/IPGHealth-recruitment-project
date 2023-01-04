@@ -217,9 +217,15 @@ body {
       font-size: $fontL;
       font-weight: $bold2;
     }
-    .circle-element_line {
-      grid-area: br;
+    .blog-line {
+      grid-column: 2/3;
+      @include line;
+      align-self: center;
+      width: 15vw;
+      color: $blue;
+      background-color: $blue;
     }
+
     .tiles {
       grid-area: tiles;
       display: flex;

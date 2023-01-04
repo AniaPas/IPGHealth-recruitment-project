@@ -217,8 +217,14 @@ body footer .blog-text {
   font-size: 1.5rem;
   font-weight: 600;
 }
-body footer .circle-element_line {
-  grid-area: br;
+body footer .blog-line {
+  grid-column: 2/3;
+  height: 1.5px;
+  border-width: 0;
+  align-self: center;
+  width: 15vw;
+  color: #0f6eff;
+  background-color: #0f6eff;
 }
 body footer .tiles {
   grid-area: tiles;
