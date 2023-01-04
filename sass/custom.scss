@@ -2,7 +2,7 @@
 @import "./variables";
 @import "./mixins";
 body {
-  margin: 0;
+  margin-bottom: 0;
   color: $nero;
   font-family: $font1;
   background-color: $lightGray;
@@ -198,6 +198,48 @@ body {
       color: $blue;
       background-color: $white;
       transform: translate(-9vw, 20vh);
+    }
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "blog br br br"
+      "tiles tiles tiles tiles";
+    margin: 12vh 0 0 $margin1;
+    .blog-heading {
+      grid-area: blog;
+      font-size: $fontXS;
+      color: $blue;
+    }
+    .blog-text {
+      margin-top: 4vh;
+      grid-area: blog;
+      font-size: $fontL;
+      font-weight: $bold2;
+    }
+    .circle-element_line {
+      grid-area: br;
+    }
+    .tiles {
+      grid-area: tiles;
+      display: flex;
+      flex-direction: row;
+      .tile1 {
+        @include rectangle2;
+        background-color: $nero;
+      }
+      .tile2 {
+        @include rectangle2;
+        background-color: $white;
+      }
+      .tile3 {
+        @include rectangle2;
+        background-color: $white;
+      }
+      .tile4 {
+        @include rectangle2;
+        background-color: $white;
+      }
     }
   }
 }

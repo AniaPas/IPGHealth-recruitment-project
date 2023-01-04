@@ -1,6 +1,6 @@
 /** INSERT CUSTOM SCSS STYLES HERE **/
 body {
-  margin: 0;
+  margin-bottom: 0;
   color: #1d1d1d;
   font-family: "Poppins";
   background-color: #f5f5f7;
@@ -200,4 +200,60 @@ body .circle-element .circle-element_line {
   color: #0f6eff;
   background-color: #ffffff;
   transform: translate(-9vw, 20vh);
+}
+body footer {
+  display: grid;
+  grid-template-areas: "blog br br br" "tiles tiles tiles tiles";
+  margin: 12vh 0 0 11.66vw;
+}
+body footer .blog-heading {
+  grid-area: blog;
+  font-size: 0.7rem;
+  color: #0f6eff;
+}
+body footer .blog-text {
+  margin-top: 4vh;
+  grid-area: blog;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+body footer .circle-element_line {
+  grid-area: br;
+}
+body footer .tiles {
+  grid-area: tiles;
+  display: flex;
+  flex-direction: row;
+}
+body footer .tiles .tile1 {
+  border-radius: 50px 50px 0 50px;
+  padding: 20px;
+  height: 55vh;
+  width: 20vw;
+  margin: 12vh 3vw 10vh 0;
+  background-color: #1d1d1d;
+}
+body footer .tiles .tile2 {
+  border-radius: 50px 50px 0 50px;
+  padding: 20px;
+  height: 55vh;
+  width: 20vw;
+  margin: 12vh 3vw 10vh 0;
+  background-color: #ffffff;
+}
+body footer .tiles .tile3 {
+  border-radius: 50px 50px 0 50px;
+  padding: 20px;
+  height: 55vh;
+  width: 20vw;
+  margin: 12vh 3vw 10vh 0;
+  background-color: #ffffff;
+}
+body footer .tiles .tile4 {
+  border-radius: 50px 50px 0 50px;
+  padding: 20px;
+  height: 55vh;
+  width: 20vw;
+  margin: 12vh 3vw 10vh 0;
+  background-color: #ffffff;
 }/*# sourceMappingURL=custom.css.map */

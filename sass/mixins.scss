@@ -4,8 +4,14 @@
   padding: 20px;
   background-color: $darkGray;
 }
+@mixin rectangle2 {
+  border-radius: 50px 50px 0 50px;
+  padding: 20px;
+  height: 55vh;
+  width: 20vw;
+  margin: 12vh 3vw 10vh 0;
+}
 @mixin line {
-  //position: absolute;
   height: 1.5px;
   border-width: 0;
 }
