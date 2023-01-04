@@ -113,7 +113,7 @@ body header .wrapper .play .play-element .play-element_line {
   height: 1.5px;
   border-width: 0;
   background-color: #0f6eff;
-  transform: translate(0, 2.2vh);
+  transform: translate(0, 3.5vh);
   color: #0f6eff;
 }
 body header .contact-section {
@@ -232,32 +232,63 @@ body footer .tiles {
   flex-direction: row;
 }
 body footer .tiles .tile1 {
-  border-radius: 50px 50px 0 50px;
-  padding: 20px;
+  border-radius: 19% 19% 0 19%;
+  padding: 3vw;
   height: 55vh;
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
   background-color: #1d1d1d;
 }
+body footer .tiles .tile1 .tile1_comment-author {
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+body footer .tiles .tile1 .tile1_comment-date {
+  margin-top: 1.5vh;
+  font-size: 0.7rem;
+  color: #9f9f9f;
+}
+body footer .tiles .tile1 .tile1_comment-heading {
+  margin-top: 2vh;
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 200%;
+}
+body footer .tiles .tile1 .tile1_comment-circle {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  width: 5vw;
+  height: 5vw;
+  color: #ffffff;
+  font-size: 2vh;
+  text-align: center;
+  padding: 3.5vh 0;
+  margin-top: 5vh;
+}
+body footer .tiles .tile1 .tile1_comment-circle:first-letter {
+  text-decoration: underline;
+}
 body footer .tiles .tile2 {
-  border-radius: 50px 50px 0 50px;
-  padding: 20px;
+  border-radius: 19% 19% 0 19%;
+  padding: 3vw;
   height: 55vh;
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
   background-color: #ffffff;
 }
 body footer .tiles .tile3 {
-  border-radius: 50px 50px 0 50px;
-  padding: 20px;
+  border-radius: 19% 19% 0 19%;
+  padding: 3vw;
   height: 55vh;
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
   background-color: #ffffff;
 }
 body footer .tiles .tile4 {
-  border-radius: 50px 50px 0 50px;
-  padding: 20px;
+  border-radius: 19% 19% 0 19%;
+  padding: 3vw;
   height: 55vh;
   width: 20vw;
   margin: 12vh 3vw 10vh 0;

@@ -115,7 +115,7 @@ body {
           .play-element_line {
             @include line;
             background-color: $blue;
-            transform: translate(0, 2.2vh);
+            transform: translate(0, 3.5vh);
             color: $blue;
           }
         }
@@ -233,6 +233,35 @@ body {
       .tile1 {
         @include rectangle2;
         background-color: $nero;
+        .tile1_comment-author {
+          font-size: $fontXS;
+          color: $white;
+        }
+        .tile1_comment-date {
+          margin-top: 1.5vh;
+          font-size: $fontXS;
+          color: $darkGray;
+        }
+        .tile1_comment-heading {
+          margin-top: 2vh;
+          font-size: $fontS;
+          color: $white;
+          line-height: 200%;
+        }
+        .tile1_comment-circle {
+          @include circle;
+          border: 1.5px solid $white;
+          width: 5vw;
+          height: 5vw;
+          color: $white;
+          font-size: 2vh;
+          text-align: center;
+          padding: 3.5vh 0;
+          margin-top: 5vh;
+          &:first-letter {
+            text-decoration: underline;
+          }
+        }
       }
       .tile2 {
         @include rectangle2;

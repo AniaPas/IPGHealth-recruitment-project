@@ -5,8 +5,8 @@
   background-color: $darkGray;
 }
 @mixin rectangle2 {
-  border-radius: 50px 50px 0 50px;
-  padding: 20px;
+  border-radius: 19% 19% 0 19%;
+  padding: 3vw;
   height: 55vh;
   width: 20vw;
   margin: 12vh 3vw 10vh 0;
@@ -19,4 +19,6 @@
   position: absolute;
   background-color: transparent;
   border-radius: 50%;
+}
+@mixin author {
 }
