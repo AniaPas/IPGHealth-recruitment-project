@@ -239,6 +239,14 @@ body {
         z-index: -100;
         transform: translate(-5vw, 12vh);
       }
+      .tile-line {
+        position: absolute;
+        height: 1px;
+        width: 15vw;
+        color: $white;
+        background-color: $white;
+        transform: translate(-13vw, 50vh);
+      }
       .tile1 {
         @include rectangle2;
         background-color: $nero;
