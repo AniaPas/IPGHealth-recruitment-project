@@ -5,10 +5,10 @@ body {
   font-family: "Poppins";
   background-color: #f5f5f7;
   height: 200vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 body header {
-  position: absolute;
   display: grid;
   justify-content: start;
   grid-template-areas: "wrapper wrapper contact contact";
@@ -21,7 +21,7 @@ body header .wrapper {
   display: grid;
   border-radius: 0 0 3.5rem 0;
   grid-template-rows: 20vh 35vh;
-  grid-template-areas: "a " "b";
+  grid-template-areas: "a" "b" "c" "d";
 }
 body header .wrapper .nav-container {
   font-size: 0.7rem;
@@ -38,6 +38,11 @@ body header .wrapper .nav-container .logo {
   width: 11.66vw;
   height: 20.51vh;
   border-radius: 0 0 20% 0;
+}
+body header .wrapper .nav-container .logo .logo-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5vh 5vw;
 }
 body header .wrapper .nav-container .navigation-list {
   position: fixed;
@@ -72,6 +77,44 @@ body header .wrapper .intro .intro-text {
   font-size: 0.9rem;
   line-height: 115%;
   color: #9f9f9f;
+}
+body header .wrapper .play {
+  grid-area: d;
+  display: flex;
+  flex-direction: row;
+}
+body header .wrapper .play .play-text {
+  font-size: 0.9rem;
+  width: 10vw;
+  line-height: 115%;
+  color: #0f6eff;
+  transform: translate(8vw, 0);
+}
+body header .wrapper .play .play-element {
+  width: 14vw;
+  position: relative;
+}
+body header .wrapper .play .play-element .play-element_circle {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  border: 2px solid #0f6eff;
+  transform: translate(10vw, -7vh);
+}
+body header .wrapper .play .play-element .play-element_circle .material-symbols-outlined {
+  font-size: 9.5vw;
+  font-weight: 100;
+  color: #0f6eff;
+  border: 0;
+}
+body header .wrapper .play .play-element .play-element_line {
+  height: 1.5px;
+  border-width: 0;
+  background-color: #0f6eff;
+  transform: translate(0, 2.2vh);
+  color: #0f6eff;
 }
 body header .contact-section {
   display: grid;
@@ -113,7 +156,7 @@ body header .contact-section .rectangle3 {
   padding: 20px;
   background-color: #9f9f9f;
   transform: scale(-1);
-  margin: 0 0 2vh 7.5vw;
+  margin: 0 0 5vh 7.5vw;
 }
 body .rectangle1 {
   border-radius: 50px 50px 50px 0;
@@ -134,4 +177,27 @@ body .rectangle2 {
   width: 30vw;
   height: 43vh;
   transform: translate(67.3vw, 70.5vh) rotate(-90deg);
+}
+body .circle-element {
+  position: absolute;
+  width: 18vw;
+  height: 18vw;
+  transform: translate(73.5vw, 110vh);
+  z-index: 200;
+}
+body .circle-element .circle-element_circle {
+  width: 18vw;
+  height: 18vw;
+  background-color: red;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+body .circle-element .circle-element_line {
+  height: 1.5px;
+  border-width: 0;
+  color: #0f6eff;
+  background-color: #ffffff;
+  transform: translate(-9vw, 20vh);
 }/*# sourceMappingURL=custom.css.map */

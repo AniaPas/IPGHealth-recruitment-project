@@ -4,3 +4,13 @@
   padding: 20px;
   background-color: $darkGray;
 }
+@mixin line {
+  //position: absolute;
+  height: 1.5px;
+  border-width: 0;
+}
+@mixin circle {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+}
