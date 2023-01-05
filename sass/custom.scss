@@ -153,13 +153,13 @@ body {
           color: $darkGray;
         }
       }
-      .rectangle0 {
+      .rectangle3 {
         grid-row: 2/3;
         width: 28vw;
         height: 38vh;
         @include rectangle;
         transform: scale(-1);
-        margin: 0 0 5vh 7.5vw;
+        margin: 0 0 2vh 8.5svw;
       }
     }
   }
@@ -196,7 +196,7 @@ body {
         height: 1vw;
         @include circle;
         background-color: $blue;
-        transform: translate(6.5vw, 38vh);
+        transform: translate(6.5vw, 34.5vh);
       }
     }
     .circle-element_line {
@@ -230,6 +230,7 @@ body {
       width: 15vw;
       color: $blue;
       background-color: $blue;
+      margin-left: 5vw;
     }
 
     .tiles {
@@ -321,8 +322,8 @@ body {
   body {
     header {
       grid-template-areas:
-        "wrapper wrapper"
-        "contact contact";
+        "wrapper"
+        "contact";
       .wrapper {
         width: 100%;
         .nav-container {
@@ -373,6 +374,85 @@ body {
               width: 45vw;
             }
           }
+        }
+      }
+      .contact-section {
+        width: 100%;
+        height: 100%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        .contact-section_details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .contact-section_details--btn {
+            font-size: $fontXL;
+            border: 2px solid $blue;
+            margin-left: 0;
+            margin-top: $padding5;
+          }
+          .contact-section_details--lg {
+            margin-left: 0;
+            padding-top: $padding5;
+            font-size: $fontXL;
+          }
+          .contact-section_details--phone {
+            color: $blue;
+            font-size: $fontXL;
+            padding-top: $padding5;
+          }
+          .contact-section_details--call {
+            color: $darkGray;
+            font-size: $fontXL;
+            padding-top: $padding5;
+          }
+        }
+        .rectangle3 {
+          display: none;
+        }
+      }
+    }
+    .rectangle1 {
+      display: none;
+    }
+    .rectangle2 {
+      display: none;
+    }
+    .circle-element {
+      .circle-element_circle {
+        display: none;
+      }
+      .circle-element_line {
+        color: $blue;
+        background-color: $blue;
+        transform: translate(-32vw, 60vh);
+      }
+    }
+    footer {
+      display: grid;
+      grid-template-areas:
+        "blog"
+        "tiles"
+        "tiles"
+        "tiles"
+        "tiles";
+      .blog-heading {
+        font-size: $fontM;
+      }
+      .blog-text {
+        margin-top: 2vh;
+      }
+      .blog-line {
+        display: none;
+      }
+      .tiles {
+        flex-direction: column;
+        .tile-line {
+          display: none;
         }
       }
     }
