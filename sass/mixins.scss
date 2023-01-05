@@ -12,7 +12,7 @@
   margin: 12vh 3vw 10vh 0;
 }
 @mixin line {
-  height: 1.5px;
+  height: 1.7px;
   border-width: 0;
 }
 @mixin circle {
@@ -72,5 +72,17 @@
     font-size: $fontXS;
     color: $blue;
     text-decoration: underline;
+  }
+  @media (max-width: 480px) {
+    margin-bottom: 5%;
+    padding: 5%;
+    .comment-text {
+      font-size: $fontS;
+    }
+    .comment-circle {
+      width: 8vw;
+      height: 8vw;
+      margin-left: 7vw;
+    }
   }
 }

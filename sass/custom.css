@@ -110,7 +110,7 @@ body header .wrapper .play .play-element .play-element_circle .material-symbols-
   border: 0;
 }
 body header .wrapper .play .play-element .play-element_line {
-  height: 1.5px;
+  height: 1.7px;
   border-width: 0;
   background-color: #0f6eff;
   transform: translate(0, 3.5vh);
@@ -148,7 +148,7 @@ body header .contact-section .contact-section_details .contact-section_details--
 body header .contact-section .contact-section_details .contact-section_details--call {
   color: #9f9f9f;
 }
-body header .contact-section .rectangle0 {
+body header .contact-section .rectangle3 {
   grid-row: 2/3;
   width: 28vw;
   height: 38vh;
@@ -156,7 +156,7 @@ body header .contact-section .rectangle0 {
   padding: 20px;
   background-color: #9f9f9f;
   transform: scale(-1);
-  margin: 0 0 5vh 7.5vw;
+  margin: 0 0 2vh 8.5svw;
 }
 body .rectangle1 {
   border-radius: 50px 50px 50px 0;
@@ -200,10 +200,10 @@ body .circle-element .circle-element_circle .circle-element_circle--dot {
   background-color: transparent;
   border-radius: 50%;
   background-color: #0f6eff;
-  transform: translate(6.5vw, 38vh);
+  transform: translate(6.5vw, 34.5vh);
 }
 body .circle-element .circle-element_line {
-  height: 1.5px;
+  height: 1.7px;
   border-width: 0;
   color: #0f6eff;
   background-color: #ffffff;
@@ -227,12 +227,13 @@ body footer .blog-text {
 }
 body footer .blog-line {
   grid-column: 2/3;
-  height: 1.5px;
+  height: 1.7px;
   border-width: 0;
   align-self: center;
   width: 15vw;
   color: #0f6eff;
   background-color: #0f6eff;
+  margin-left: 5vw;
 }
 body footer .tiles {
   position: relative;
@@ -349,6 +350,20 @@ body footer .tiles .tile2 .comment-more {
   color: #0f6eff;
   text-decoration: underline;
 }
+@media (max-width: 480px) {
+  body footer .tiles .tile2 {
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+  body footer .tiles .tile2 .comment-text {
+    font-size: 0.9rem;
+  }
+  body footer .tiles .tile2 .comment-circle {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 7vw;
+  }
+}
 body footer .tiles .tile3 {
   border-radius: 19% 19% 0 19%;
   padding: 3vw;
@@ -402,6 +417,20 @@ body footer .tiles .tile3 .comment-more {
   color: #0f6eff;
   text-decoration: underline;
 }
+@media (max-width: 480px) {
+  body footer .tiles .tile3 {
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+  body footer .tiles .tile3 .comment-text {
+    font-size: 0.9rem;
+  }
+  body footer .tiles .tile3 .comment-circle {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 7vw;
+  }
+}
 body footer .tiles .tile4 {
   height: 20vh;
   width: 14vw;
@@ -420,9 +449,9 @@ body footer .tiles .tile4 .gray-dot {
   background-color: #9f9f9f;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body header {
-    grid-template-areas: "wrapper wrapper" "contact contact";
+    grid-template-areas: "wrapper" "contact";
   }
   body header .wrapper {
     width: 100%;
@@ -465,5 +494,95 @@ body footer .tiles .tile4 .gray-dot {
   body header .wrapper .play .play-element .play-element_line {
     transform: translate(0vw, 8vh);
     width: 45vw;
+  }
+  body header .contact-section {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  body header .contact-section .contact-section_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body header .contact-section .contact-section_details .contact-section_details--btn {
+    font-size: 1.7rem;
+    border: 2px solid #0f6eff;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  body header .contact-section .contact-section_details .contact-section_details--lg {
+    margin-left: 0;
+    padding-top: 5%;
+    font-size: 1.7rem;
+  }
+  body header .contact-section .contact-section_details .contact-section_details--phone {
+    color: #0f6eff;
+    font-size: 1.7rem;
+    padding-top: 5%;
+  }
+  body header .contact-section .contact-section_details .contact-section_details--call {
+    color: #9f9f9f;
+    font-size: 1.7rem;
+    padding-top: 5%;
+  }
+  body header .contact-section .rectangle3 {
+    display: none;
+  }
+  body .rectangle1 {
+    display: none;
+  }
+  body .rectangle2 {
+    display: none;
+  }
+  body .circle-element .circle-element_circle {
+    display: none;
+  }
+  body .circle-element .circle-element_line {
+    color: #0f6eff;
+    background-color: #0f6eff;
+    transform: translate(-32vw, 60vh);
+  }
+  body footer {
+    display: grid;
+    grid-template-areas: "blog" "tiles" "tiles" "tiles" "tiles";
+  }
+  body footer .blog-heading {
+    font-size: 1.1rem;
+  }
+  body footer .blog-text {
+    margin-top: 2vh;
+  }
+  body footer .blog-line {
+    display: none;
+  }
+  body footer .tiles {
+    flex-direction: column;
+  }
+  body footer .tiles .tile-line {
+    display: none;
+  }
+  body footer .tiles .tile1 {
+    width: 85%;
+    margin: 5vh 0 0 0;
+    padding: 10%;
+  }
+  body footer .tiles .tile1 .tile1_comment-circle {
+    display: none;
+  }
+  body footer .tiles .tile2 {
+    width: 85%;
+  }
+  body footer .tiles .tile3 {
+    width: 85%;
+  }
+  body footer .tiles .tile4 {
+    display: none;
+    height: 5%;
+    margin: 0;
   }
 }/*# sourceMappingURL=custom.css.map */

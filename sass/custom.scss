@@ -318,7 +318,7 @@ body {
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body {
     header {
       grid-template-areas:
@@ -453,6 +453,25 @@ body {
         flex-direction: column;
         .tile-line {
           display: none;
+        }
+        .tile1 {
+          width: $width85;
+          margin: 5vh 0 0 0;
+          padding: 10%;
+          .tile1_comment-circle {
+            display: none;
+          }
+        }
+        .tile2 {
+          width: $width85;
+        }
+        .tile3 {
+          width: $width85;
+        }
+        .tile4 {
+          display: none;
+          height: 5%;
+          margin: 0;
         }
       }
     }
