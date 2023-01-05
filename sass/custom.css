@@ -418,4 +418,37 @@ body footer .tiles .tile4 .gray-dot {
   height: 0.7vh;
   margin: 4px;
   background-color: #9f9f9f;
+}
+
+@media (max-width: 480px) {
+  body header {
+    grid-template-areas: "wrapper wrapper" "contact contact";
+  }
+  body header .wrapper {
+    width: 100%;
+  }
+  body header .wrapper .nav-container .logo {
+    width: 30vw;
+    height: 20.51vh;
+  }
+  body header .wrapper .nav-container .logo .logo-text {
+    font-size: 1.7rem;
+  }
+  body header .wrapper .nav-container .navigation-list {
+    position: static;
+    width: 67vw;
+    height: 25vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body header .wrapper .nav-container .navigation-list .navigation-list_element {
+    width: 7vw;
+    font-size: 1.5rem;
+  }
+  body header .wrapper .intro .intro-text {
+    font-size: 1.5rem;
+  }
+  body header .wrapper .play .play-text {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=custom.css.map */

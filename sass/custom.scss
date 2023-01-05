@@ -15,7 +15,6 @@ body {
     grid-template-areas: "wrapper wrapper contact contact";
 
     .wrapper {
-      //position: relative;
       grid-area: wrapper;
       background-color: $white;
       width: 56.8vw;
@@ -313,6 +312,49 @@ body {
           height: 0.7vh;
           margin: 4px;
           background-color: $darkGray;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  body {
+    header {
+      grid-template-areas:
+        "wrapper wrapper"
+        "contact contact";
+      .wrapper {
+        width: 100%;
+        .nav-container {
+          .logo {
+            width: 30vw;
+            height: 20.51vh;
+            .logo-text {
+              font-size: $fontXL;
+            }
+          }
+          .navigation-list {
+            position: static;
+            width: 67vw;
+            height: 25vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .navigation-list_element {
+              width: 7vw;
+              font-size: $fontL;
+            }
+          }
+        }
+        .intro {
+          .intro-text {
+            font-size: $fontL;
+          }
+        }
+        .play {
+          .play-text {
+            font-size: $fontM;
+          }
         }
       }
     }
