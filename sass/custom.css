@@ -450,5 +450,20 @@ body footer .tiles .tile4 .gray-dot {
   }
   body header .wrapper .play .play-text {
     font-size: 1.1rem;
+    transform: translate(60vw, 4vh);
+    z-index: 900;
+  }
+  body header .wrapper .play .play-element .play-element_circle {
+    width: 30vw;
+    height: 30vw;
+    z-index: 900;
+    transform: translate(35svw, 0);
+  }
+  body header .wrapper .play .play-element .play-element_circle .material-symbols-outlined {
+    font-size: 7rem;
+  }
+  body header .wrapper .play .play-element .play-element_line {
+    transform: translate(0vw, 8vh);
+    width: 45vw;
   }
 }/*# sourceMappingURL=custom.css.map */

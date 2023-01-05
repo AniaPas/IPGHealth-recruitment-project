@@ -354,6 +354,24 @@ body {
         .play {
           .play-text {
             font-size: $fontM;
+            transform: translate(60vw, 4vh);
+            z-index: 900;
+          }
+          .play-element {
+            // width: 40vw;
+            .play-element_circle {
+              width: 30vw;
+              height: 30vw;
+              z-index: 900;
+              transform: translate(35svw, 0);
+              .material-symbols-outlined {
+                font-size: 7rem;
+              }
+            }
+            .play-element_line {
+              transform: translate(0vw, 8vh);
+              width: 45vw;
+            }
           }
         }
       }
